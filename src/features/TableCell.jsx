@@ -21,27 +21,7 @@ function TableCell({ row, deleteRow, index, handleMoveDown, handleMoveUp }) {
     setRows,
   } = useParentContext();
 
-  // useEffect(() => {
-  //   // Update the row object whenever the state changes
-  //   row.id = index;
-  //   row.question = question;
-  //   row.selectedType = selectedType;
-  //   row.choice = choice;
-  //   row.checked = checked;
-  //   row.selectedStage = selectedStage;
-  //   row.parentQuestion = parentQuestion;
-  //   row.file = file;
-  // }, [
-  //   index,
-  //   question,
-  //   selectedType,
-  //   selectedStage,
-  //   checked,
-  //   choice,
-  //   file,
-  //   parentQuestion,
-  //   row,
-  // ]);
+  
   useEffect(() => {
     // Update the row object in the parent component whenever the local state variables change
     setRows((prevRows) =>
